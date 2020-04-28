@@ -45,7 +45,6 @@ defmodule Strsim.MixProject do
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false}
-
     ]
   end
 end
