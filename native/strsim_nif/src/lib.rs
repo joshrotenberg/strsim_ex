@@ -25,20 +25,35 @@ mod atoms {
 rustler::rustler_export_nifs! {
     "Elixir.Strsim.Nif",
     [
-        // hamming
-        ("hamming", 2, hamming),
-        // usize
-        ("levenshtein", 2, levenshtein),
         ("damerau_levenshtein", 2, damerau_levenshtein),
-        ("osa_distance", 2, osa_distance),
-        // f64
+        ("hamming", 2, hamming),
         ("jaro", 2, jaro),
         ("jaro_winkler", 2, jaro_winkler),
-        ("normalized_levenshtein", 2, normalized_levenshtein),
         ("normalized_damerau_levenshtein", 2, normalized_damerau_levenshtein),
+        ("normalized_levenshtein", 2, normalized_levenshtein),
+        ("levenshtein", 2, levenshtein),
+        ("osa_distance", 2, osa_distance),
         ("sorensen_dice", 2, sorensen_dice)
     ],
     None
+}
+
+fn do_match_usize<'a>(f: fn(&str, &str) -> usize, args: &[Term<'a>]) -> Result<usize, Error> {
+    let str1: String = args[0].decode()?;
+    let str2: String = args[1].decode()?;
+
+    Ok(f(&str1, &str2))
+}
+
+fn do_match_f64<'a>(f: fn(&str, &str) -> f64, args: &[Term<'a>]) -> Result<f64, Error> {
+    let str1: String = args[0].decode()?;
+    let str2: String = args[1].decode()?;
+
+    Ok(f(&str1, &str2))
+}
+
+fn damerau_levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
+    Ok((atoms::ok(), do_match_usize(_damerau_levenshtein, args)?).encode(env))
 }
 
 fn hamming<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
@@ -53,32 +68,6 @@ fn hamming<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
     }
 }
 
-fn do_match_usize<'a>(f: fn(&str, &str) -> usize, args: &[Term<'a>]) -> Result<usize, Error> {
-    let str1: String = args[0].decode()?;
-    let str2: String = args[1].decode()?;
-
-    Ok(f(&str1, &str2))
-}
-
-fn levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
-    Ok((atoms::ok(), do_match_usize(_levenshtein, args)?).encode(env))
-}
-
-fn damerau_levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
-    Ok((atoms::ok(), do_match_usize(_damerau_levenshtein, args)?).encode(env))
-}
-
-fn osa_distance<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
-    Ok((atoms::ok(), do_match_usize(_osa_distance, args)?).encode(env))
-}
-
-fn do_match_f64<'a>(f: fn(&str, &str) -> f64, args: &[Term<'a>]) -> Result<f64, Error> {
-    let str1: String = args[0].decode()?;
-    let str2: String = args[1].decode()?;
-
-    Ok(f(&str1, &str2))
-}
-
 fn jaro<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
     Ok((atoms::ok(), do_match_f64(_jaro, args)?).encode(env))
 }
@@ -87,16 +76,24 @@ fn jaro_winkler<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
     Ok((atoms::ok(), do_match_f64(_jaro_winkler, args)?).encode(env))
 }
 
-fn normalized_levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
-    Ok((atoms::ok(), do_match_f64(_normalized_levenshtein, args)?).encode(env))
-}
-
 fn normalized_damerau_levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
     Ok((
         atoms::ok(),
         do_match_f64(_normalized_damerau_levenshtein, args)?,
     )
         .encode(env))
+}
+
+fn normalized_levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
+    Ok((atoms::ok(), do_match_f64(_normalized_levenshtein, args)?).encode(env))
+}
+
+fn levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
+    Ok((atoms::ok(), do_match_usize(_levenshtein, args)?).encode(env))
+}
+
+fn osa_distance<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
+    Ok((atoms::ok(), do_match_usize(_osa_distance, args)?).encode(env))
 }
 
 fn sorensen_dice<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
