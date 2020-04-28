@@ -5,11 +5,13 @@ defmodule Mix.Tasks.Rustfmt do
   @rs_path_wildcard "native/*/src/*.rs"
 
   @shortdoc "Calls rustfmt on all .rs files found in the native src directory."
-  def run(_) do
-    p =
+  def run(argv) do
+    paths =
       Path.expand(@rs_path_wildcard)
       |> Path.wildcard()
 
-    System.cmd("rustfmt", p)
+     System.cmd("rustfmt", paths ++ argv) |>
+     elem(0) |>
+     IO.puts
   end
 end
