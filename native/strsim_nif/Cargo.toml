@@ -1,0 +1,15 @@
+[package]
+name = "strsim_nif"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "strsim_nif"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+rustler = "0.21.0"
+lazy_static = "1.4.0"
+strsim = "0.10.0"
