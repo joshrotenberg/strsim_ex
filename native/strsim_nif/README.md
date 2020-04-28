@@ -1,4 +1,4 @@
-# NIF for Elixir.What.NifTest
+# NIF for Elixir.Strsim.Nif
 
 ## To build the NIF module:
 
@@ -9,8 +9,8 @@
 ## To load the NIF:
 
 ```elixir
-defmodule What.NifTest do
-    use Rustler, otp_app: <otp-app>, crate: "what_niftest"
+defmodule Strsim.Nif do
+    use Rustler, otp_app: <otp-app>, crate: "strsim_nif"
 
     # When your NIF is loaded, it will override this function.
     def add(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
