@@ -5,10 +5,11 @@ extern crate strsim;
 
 use rustler::{Encoder, Env, Error, NifResult, Term};
 use strsim::{
-    damerau_levenshtein as _damerau_levenshtein, jaro as _jaro, jaro_winkler as _jaro_winkler,
-    levenshtein as _levenshtein, normalized_damerau_levenshtein as _normalized_damerau_levenshtein,
+    damerau_levenshtein as _damerau_levenshtein, hamming as _hamming, jaro as _jaro,
+    jaro_winkler as _jaro_winkler, levenshtein as _levenshtein,
+    normalized_damerau_levenshtein as _normalized_damerau_levenshtein,
     normalized_levenshtein as _normalized_levenshtein, osa_distance as _osa_distance,
-    sorensen_dice as _sorensen_dice, hamming as _hamming, StrSimError::DifferentLengthArgs
+    sorensen_dice as _sorensen_dice, StrSimError::DifferentLengthArgs,
 };
 
 mod atoms {
@@ -41,13 +42,14 @@ rustler::rustler_export_nifs! {
 }
 
 fn hamming<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
-
     let str1: String = args[0].decode()?;
     let str2: String = args[1].decode()?;
 
     match _hamming(&str1, &str2) {
         Ok(num) => Ok((atoms::ok(), num).encode(env)),
-        Err(DifferentLengthArgs) => Ok((atoms::error(), atoms::different_length_args()).encode(env))
+        Err(DifferentLengthArgs) => {
+            Ok((atoms::error(), atoms::different_length_args()).encode(env))
+        }
     }
 }
 
