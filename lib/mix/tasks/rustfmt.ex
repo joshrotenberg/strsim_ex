@@ -1,4 +1,5 @@
 defmodule Mix.Tasks.Rustfmt do
+  @moduledoc false
   use Mix.Task
 
   @rs_path_wildcard "native/*/src/*.rs"

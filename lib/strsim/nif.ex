@@ -1,4 +1,5 @@
 defmodule Strsim.Nif do
+  @moduledoc false
   use Rustler, otp_app: :strsim, crate: "strsim_nif"
 
   def damerau_levenshtein(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
