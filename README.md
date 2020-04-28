@@ -5,7 +5,7 @@ An [Elixir][0] wrapper around the [Rust][1] [strsim][2] crate with [rustler][3].
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `what` to your list of dependencies in `mix.exs`:
+by adding `strsim` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
