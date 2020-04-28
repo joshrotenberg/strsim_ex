@@ -12,11 +12,7 @@ defmodule Strsim.MixProject do
       package: package(),
       start_permanent: Mix.env() == :prod,
       compilers: [:rustler] ++ Mix.compilers(),
-      rustler_crates: [
-        strsim_nif: [
-          mode: if(Mix.env() == :prod, do: :release, else: :debug)
-        ]
-      ],
+      rustler_crates:  rustler_crates(),
       deps: deps()
     ]
   end
@@ -45,6 +41,14 @@ defmodule Strsim.MixProject do
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false}
+    ]
+  end
+
+  defp rustler_crates do
+    [
+      strsim_nif: [
+        mode: if(Mix.env() == :prod, do: :release, else: :debug)
+      ]
     ]
   end
 end
