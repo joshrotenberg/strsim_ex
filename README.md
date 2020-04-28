@@ -17,7 +17,7 @@ end
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/what](https://hexdocs.pm/what).
+be found at [https://hexdocs.pm/strsim](https://hexdocs.pm/strsim).
 
 [0]: https://elixir-lang.org
 [1]: https://www.rust-lang.org 
