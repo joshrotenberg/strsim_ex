@@ -59,19 +59,19 @@ Run Time
   </tr>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap; text-align: right">891.24 K</td>
-    <td style="white-space: nowrap; text-align: right">1.12 μs</td>
-    <td style="white-space: nowrap; text-align: right">±3249.81%</td>
-    <td style="white-space: nowrap; text-align: right">0.90 μs</td>
-    <td style="white-space: nowrap; text-align: right">1.90 μs</td>
+    <td style="white-space: nowrap; text-align: right">627.64 K</td>
+    <td style="white-space: nowrap; text-align: right">1.59 μs</td>
+    <td style="white-space: nowrap; text-align: right">±2752.03%</td>
+    <td style="white-space: nowrap; text-align: right">1 μs</td>
+    <td style="white-space: nowrap; text-align: right">3 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">177.45 K</td>
-    <td style="white-space: nowrap; text-align: right">5.64 μs</td>
-    <td style="white-space: nowrap; text-align: right">±1086.71%</td>
-    <td style="white-space: nowrap; text-align: right">3.90 μs</td>
-    <td style="white-space: nowrap; text-align: right">13.90 μs</td>
+    <td style="white-space: nowrap; text-align: right">179.50 K</td>
+    <td style="white-space: nowrap; text-align: right">5.57 μs</td>
+    <td style="white-space: nowrap; text-align: right">±1329.75%</td>
+    <td style="white-space: nowrap; text-align: right">4 μs</td>
+    <td style="white-space: nowrap; text-align: right">14 μs</td>
   </tr>
 </table>
 Comparison
@@ -82,13 +82,13 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap;text-align: right">891.24 K</td>
+    <td style="white-space: nowrap;text-align: right">627.64 K</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">177.45 K</td>
-    <td style="white-space: nowrap; text-align: right">5.02x</td>
+    <td style="white-space: nowrap; text-align: right">179.50 K</td>
+    <td style="white-space: nowrap; text-align: right">3.5x</td>
   </tr>
 </table>
 Memory Usage

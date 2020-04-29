@@ -16,9 +16,20 @@ All of the non-generic functions in the create have equivalent Elixir functions:
 # etc.
 ```
 
+## Benchmarks
+
+Everybody loves benchmarks. There are results for both [jaro][bench/jaro_benchmark_results.md] and [levenshtein][bench/levenshtein_benchmark_results.md].
+
+To run the benchmarks yourself:
+
+```
+$ MIX_ENV=bench mix bench.jaro
+$ MIX_ENV=bench mix bench.levenshtein
+```
+
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+The package can be installed
 by adding `strsim` to your list of dependencies in `mix.exs`:
 
 ```elixir
