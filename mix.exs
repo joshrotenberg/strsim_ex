@@ -12,8 +12,9 @@ defmodule Strsim.MixProject do
       package: package(),
       start_permanent: Mix.env() == :prod,
       compilers: [:rustler] ++ Mix.compilers(),
-      rustler_crates:  rustler_crates(),
-      deps: deps()
+      rustler_crates: rustler_crates(),
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -40,15 +41,28 @@ defmodule Strsim.MixProject do
       {:rustler, "~> 0.21.0"},
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test},
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
+      {:benchee, "~> 1.0", only: [:dev, :bench]},
+      {:benchee_markdown, "~> 0.2", only: [:dev, :bench]}
     ]
   end
 
   defp rustler_crates do
     [
       strsim_nif: [
-        mode: if(Mix.env() == :prod, do: :release, else: :debug)
+        mode: rustc_mode(Mix.env())
       ]
+    ]
+  end
+
+  defp rustc_mode(:prod), do: :release
+  defp rustc_mode(:bench), do: :release
+  defp rustc_mode(_), do: :debug
+
+  defp aliases do
+    [
+      "bench.jaro": ["run bench/jaro.exs"],
+      "bench.levenshtein": ["run bench/levenshtein.exs"]
     ]
   end
 end
