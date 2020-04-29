@@ -1,5 +1,7 @@
 # Strsim
 
+[![Hex pm](http://img.shields.io/hexpm/v/strsim.svg?style=flat)](https://hex.pm/packages/strsim)
+
 An [Elixir][0] wrapper around the [Rust][1] [strsim][2] crate with [rustler][3].
 
 ## Usage
