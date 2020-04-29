@@ -10,8 +10,8 @@ defmodule Mix.Tasks.Rustfmt do
       Path.expand(@rs_path_wildcard)
       |> Path.wildcard()
 
-     System.cmd("rustfmt", paths ++ argv) |>
-     elem(0) |>
-     IO.puts
+    System.cmd("rustfmt", paths ++ argv)
+    |> elem(0)
+    |> IO.puts()
   end
 end
