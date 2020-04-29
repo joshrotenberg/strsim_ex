@@ -18,7 +18,7 @@ All of the non-generic functions in the create have equivalent Elixir functions:
 
 ## Benchmarks
 
-Everybody loves benchmarks. There are results for both [jaro][bench/jaro_benchmark_results.md] and [levenshtein][bench/levenshtein_benchmark_results.md].
+Everybody loves benchmarks. There are results for both [jaro](bench/jaro_benchmark_results.md) and [levenshtein](bench/levenshtein_benchmark_results.md).
 
 To run the benchmarks yourself:
 
