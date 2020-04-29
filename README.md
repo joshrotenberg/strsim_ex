@@ -1,6 +1,7 @@
 # Strsim
 
 [![Hex pm](http://img.shields.io/hexpm/v/strsim.svg?style=flat)](https://hex.pm/packages/strsim)
+![Elixir CI](https://github.com/joshrotenberg/strsim_ex/workflows/Elixir%20CI/badge.svg)
 
 An [Elixir][0] wrapper around the [Rust][1] [strsim][2] crate with [rustler][3].
 
