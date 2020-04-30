@@ -59,19 +59,19 @@ Run Time
   </tr>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap; text-align: right">627.64 K</td>
-    <td style="white-space: nowrap; text-align: right">1.59 μs</td>
-    <td style="white-space: nowrap; text-align: right">±2752.03%</td>
+    <td style="white-space: nowrap; text-align: right">710.76 K</td>
+    <td style="white-space: nowrap; text-align: right">1.41 μs</td>
+    <td style="white-space: nowrap; text-align: right">±3592.39%</td>
     <td style="white-space: nowrap; text-align: right">1 μs</td>
     <td style="white-space: nowrap; text-align: right">3 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">179.50 K</td>
-    <td style="white-space: nowrap; text-align: right">5.57 μs</td>
-    <td style="white-space: nowrap; text-align: right">±1329.75%</td>
+    <td style="white-space: nowrap; text-align: right">187.83 K</td>
+    <td style="white-space: nowrap; text-align: right">5.32 μs</td>
+    <td style="white-space: nowrap; text-align: right">±4792.89%</td>
     <td style="white-space: nowrap; text-align: right">4 μs</td>
-    <td style="white-space: nowrap; text-align: right">14 μs</td>
+    <td style="white-space: nowrap; text-align: right">12 μs</td>
   </tr>
 </table>
 Comparison
@@ -82,13 +82,13 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap;text-align: right">627.64 K</td>
+    <td style="white-space: nowrap;text-align: right">710.76 K</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">179.50 K</td>
-    <td style="white-space: nowrap; text-align: right">3.5x</td>
+    <td style="white-space: nowrap; text-align: right">187.83 K</td>
+    <td style="white-space: nowrap; text-align: right">3.78x</td>
   </tr>
 </table>
 Memory Usage
