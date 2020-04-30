@@ -7,7 +7,7 @@ An [Elixir][0] wrapper around the [Rust][1] [strsim][2] crate with [rustler][3].
 
 ## Usage
 
-All of the non-generic functions in the create have equivalent Elixir functions:
+All of the non-generic functions in the crate have equivalent Elixir functions:
 
 ```
 {:ok, 2} = Strsim.damerau_levenshtein("ab", "bca")
