@@ -62,7 +62,9 @@ defmodule Strsim.MixProject do
   defp aliases do
     [
       "bench.jaro": ["run bench/jaro.exs"],
-      "bench.levenshtein": ["run bench/levenshtein.exs"]
+      "bench.levenshtein": ["run bench/levenshtein.exs"],
+      "bench.strsim": ["run bench/strsim.exs"],
+      "bench.all": ["bench.jaro", "bench.levenshtein", "bench.strsim"]
     ]
   end
 end
