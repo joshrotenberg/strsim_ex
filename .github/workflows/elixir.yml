@@ -22,3 +22,5 @@ jobs:
       run: mix deps.get
     - name: Run Tests
       run: mix test
+    - name: Run Benchmarks
+      run: MIX_ENV=bench mix bench.all
