@@ -25,7 +25,7 @@ defmodule Strsim.MixProject do
   defp package do
     [
       maintainers: ["Josh Rotenberg"],
-      licenses: ["MIT"],
+      licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/joshrotenberg/strsim_ex"}
     ]
   end
