@@ -4,7 +4,7 @@ defmodule Strsim.MixProject do
   def project do
     [
       app: :strsim,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.10",
       source_url: "https://github.com/joshrotenberg/strsim_ex",
       test_coverage: [tool: ExCoveralls],
