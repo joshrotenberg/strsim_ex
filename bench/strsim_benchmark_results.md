@@ -59,107 +59,107 @@ Run Time
   </tr>
   <tr>
     <td style="white-space: nowrap">hamming</td>
-    <td style="white-space: nowrap; text-align: right">930.93 K</td>
-    <td style="white-space: nowrap; text-align: right">1.07 μs</td>
-    <td style="white-space: nowrap; text-align: right">±353.98%</td>
-    <td style="white-space: nowrap; text-align: right">1 μs</td>
-    <td style="white-space: nowrap; text-align: right">3 μs</td>
-  </tr>
-  <tr>
-    <td style="white-space: nowrap">generic_hamming</td>
-    <td style="white-space: nowrap; text-align: right">709.38 K</td>
-    <td style="white-space: nowrap; text-align: right">1.41 μs</td>
-    <td style="white-space: nowrap; text-align: right">±1103.83%</td>
-    <td style="white-space: nowrap; text-align: right">1 μs</td>
-    <td style="white-space: nowrap; text-align: right">3 μs</td>
-  </tr>
-  <tr>
-    <td style="white-space: nowrap">jaro</td>
-    <td style="white-space: nowrap; text-align: right">696.64 K</td>
-    <td style="white-space: nowrap; text-align: right">1.44 μs</td>
-    <td style="white-space: nowrap; text-align: right">±2770.16%</td>
+    <td style="white-space: nowrap; text-align: right">808.84 K</td>
+    <td style="white-space: nowrap; text-align: right">1.24 μs</td>
+    <td style="white-space: nowrap; text-align: right">±1449.60%</td>
     <td style="white-space: nowrap; text-align: right">1 μs</td>
     <td style="white-space: nowrap; text-align: right">3 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">jaro_winkler</td>
-    <td style="white-space: nowrap; text-align: right">675.46 K</td>
-    <td style="white-space: nowrap; text-align: right">1.48 μs</td>
-    <td style="white-space: nowrap; text-align: right">±2993.87%</td>
-    <td style="white-space: nowrap; text-align: right">1 μs</td>
-    <td style="white-space: nowrap; text-align: right">3 μs</td>
-  </tr>
-  <tr>
-    <td style="white-space: nowrap">normalized_levensthein</td>
-    <td style="white-space: nowrap; text-align: right">627.73 K</td>
-    <td style="white-space: nowrap; text-align: right">1.59 μs</td>
-    <td style="white-space: nowrap; text-align: right">±2887.62%</td>
+    <td style="white-space: nowrap; text-align: right">698.63 K</td>
+    <td style="white-space: nowrap; text-align: right">1.43 μs</td>
+    <td style="white-space: nowrap; text-align: right">±2357.80%</td>
     <td style="white-space: nowrap; text-align: right">1 μs</td>
     <td style="white-space: nowrap; text-align: right">3 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">587.98 K</td>
-    <td style="white-space: nowrap; text-align: right">1.70 μs</td>
-    <td style="white-space: nowrap; text-align: right">±2978.32%</td>
+    <td style="white-space: nowrap; text-align: right">669.65 K</td>
+    <td style="white-space: nowrap; text-align: right">1.49 μs</td>
+    <td style="white-space: nowrap; text-align: right">±1257.38%</td>
     <td style="white-space: nowrap; text-align: right">1 μs</td>
     <td style="white-space: nowrap; text-align: right">3 μs</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">generic_jaro_winkler</td>
-    <td style="white-space: nowrap; text-align: right">551.20 K</td>
-    <td style="white-space: nowrap; text-align: right">1.81 μs</td>
-    <td style="white-space: nowrap; text-align: right">±1980.08%</td>
-    <td style="white-space: nowrap; text-align: right">2 μs</td>
+    <td style="white-space: nowrap">generic_hamming</td>
+    <td style="white-space: nowrap; text-align: right">632.95 K</td>
+    <td style="white-space: nowrap; text-align: right">1.58 μs</td>
+    <td style="white-space: nowrap; text-align: right">±542.37%</td>
+    <td style="white-space: nowrap; text-align: right">1 μs</td>
+    <td style="white-space: nowrap; text-align: right">4 μs</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">normalized_levensthein</td>
+    <td style="white-space: nowrap; text-align: right">599.83 K</td>
+    <td style="white-space: nowrap; text-align: right">1.67 μs</td>
+    <td style="white-space: nowrap; text-align: right">±2186.80%</td>
+    <td style="white-space: nowrap; text-align: right">1 μs</td>
     <td style="white-space: nowrap; text-align: right">4 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">generic_jaro</td>
-    <td style="white-space: nowrap; text-align: right">541.53 K</td>
-    <td style="white-space: nowrap; text-align: right">1.85 μs</td>
-    <td style="white-space: nowrap; text-align: right">±2810.99%</td>
+    <td style="white-space: nowrap; text-align: right">525.65 K</td>
+    <td style="white-space: nowrap; text-align: right">1.90 μs</td>
+    <td style="white-space: nowrap; text-align: right">±2464.40%</td>
     <td style="white-space: nowrap; text-align: right">2 μs</td>
     <td style="white-space: nowrap; text-align: right">4 μs</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">osa_distance</td>
-    <td style="white-space: nowrap; text-align: right">462.30 K</td>
-    <td style="white-space: nowrap; text-align: right">2.16 μs</td>
-    <td style="white-space: nowrap; text-align: right">±916.67%</td>
+    <td style="white-space: nowrap">jaro</td>
+    <td style="white-space: nowrap; text-align: right">515.39 K</td>
+    <td style="white-space: nowrap; text-align: right">1.94 μs</td>
+    <td style="white-space: nowrap; text-align: right">±2928.56%</td>
+    <td style="white-space: nowrap; text-align: right">1 μs</td>
+    <td style="white-space: nowrap; text-align: right">4 μs</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">generic_jaro_winkler</td>
+    <td style="white-space: nowrap; text-align: right">490.34 K</td>
+    <td style="white-space: nowrap; text-align: right">2.04 μs</td>
+    <td style="white-space: nowrap; text-align: right">±2004.99%</td>
     <td style="white-space: nowrap; text-align: right">2 μs</td>
     <td style="white-space: nowrap; text-align: right">4 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">generic_levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">458.63 K</td>
-    <td style="white-space: nowrap; text-align: right">2.18 μs</td>
-    <td style="white-space: nowrap; text-align: right">±529.07%</td>
+    <td style="white-space: nowrap; text-align: right">440.62 K</td>
+    <td style="white-space: nowrap; text-align: right">2.27 μs</td>
+    <td style="white-space: nowrap; text-align: right">±222.23%</td>
     <td style="white-space: nowrap; text-align: right">2 μs</td>
     <td style="white-space: nowrap; text-align: right">5 μs</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">sorensen_dice</td>
-    <td style="white-space: nowrap; text-align: right">296.07 K</td>
-    <td style="white-space: nowrap; text-align: right">3.38 μs</td>
-    <td style="white-space: nowrap; text-align: right">±437.70%</td>
-    <td style="white-space: nowrap; text-align: right">3 μs</td>
-    <td style="white-space: nowrap; text-align: right">8 μs</td>
+    <td style="white-space: nowrap">osa_distance</td>
+    <td style="white-space: nowrap; text-align: right">335.71 K</td>
+    <td style="white-space: nowrap; text-align: right">2.98 μs</td>
+    <td style="white-space: nowrap; text-align: right">±6773.32%</td>
+    <td style="white-space: nowrap; text-align: right">2 μs</td>
+    <td style="white-space: nowrap; text-align: right">5 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">normalized_damerau_levensthein</td>
-    <td style="white-space: nowrap; text-align: right">254.23 K</td>
-    <td style="white-space: nowrap; text-align: right">3.93 μs</td>
-    <td style="white-space: nowrap; text-align: right">±1177.84%</td>
+    <td style="white-space: nowrap; text-align: right">295.85 K</td>
+    <td style="white-space: nowrap; text-align: right">3.38 μs</td>
+    <td style="white-space: nowrap; text-align: right">±509.08%</td>
     <td style="white-space: nowrap; text-align: right">3 μs</td>
-    <td style="white-space: nowrap; text-align: right">11 μs</td>
+    <td style="white-space: nowrap; text-align: right">7 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">damerau_levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">149.26 K</td>
-    <td style="white-space: nowrap; text-align: right">6.70 μs</td>
-    <td style="white-space: nowrap; text-align: right">±3472.82%</td>
-    <td style="white-space: nowrap; text-align: right">4 μs</td>
-    <td style="white-space: nowrap; text-align: right">21 μs</td>
+    <td style="white-space: nowrap; text-align: right">240.32 K</td>
+    <td style="white-space: nowrap; text-align: right">4.16 μs</td>
+    <td style="white-space: nowrap; text-align: right">±845.84%</td>
+    <td style="white-space: nowrap; text-align: right">3 μs</td>
+    <td style="white-space: nowrap; text-align: right">12 μs</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">sorensen_dice</td>
+    <td style="white-space: nowrap; text-align: right">220.89 K</td>
+    <td style="white-space: nowrap; text-align: right">4.53 μs</td>
+    <td style="white-space: nowrap; text-align: right">±1709.77%</td>
+    <td style="white-space: nowrap; text-align: right">3 μs</td>
+    <td style="white-space: nowrap; text-align: right">8 μs</td>
   </tr>
 </table>
 Comparison
@@ -170,68 +170,68 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">hamming</td>
-    <td style="white-space: nowrap;text-align: right">930.93 K</td>
+    <td style="white-space: nowrap;text-align: right">808.84 K</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">generic_hamming</td>
-    <td style="white-space: nowrap; text-align: right">709.38 K</td>
-    <td style="white-space: nowrap; text-align: right">1.31x</td>
-  </tr>
-  <tr>
-    <td style="white-space: nowrap">jaro</td>
-    <td style="white-space: nowrap; text-align: right">696.64 K</td>
-    <td style="white-space: nowrap; text-align: right">1.34x</td>
-  </tr>
-  <tr>
     <td style="white-space: nowrap">jaro_winkler</td>
-    <td style="white-space: nowrap; text-align: right">675.46 K</td>
-    <td style="white-space: nowrap; text-align: right">1.38x</td>
-  </tr>
-  <tr>
-    <td style="white-space: nowrap">normalized_levensthein</td>
-    <td style="white-space: nowrap; text-align: right">627.73 K</td>
-    <td style="white-space: nowrap; text-align: right">1.48x</td>
+    <td style="white-space: nowrap; text-align: right">698.63 K</td>
+    <td style="white-space: nowrap; text-align: right">1.16x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">587.98 K</td>
-    <td style="white-space: nowrap; text-align: right">1.58x</td>
+    <td style="white-space: nowrap; text-align: right">669.65 K</td>
+    <td style="white-space: nowrap; text-align: right">1.21x</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">generic_jaro_winkler</td>
-    <td style="white-space: nowrap; text-align: right">551.20 K</td>
-    <td style="white-space: nowrap; text-align: right">1.69x</td>
+    <td style="white-space: nowrap">generic_hamming</td>
+    <td style="white-space: nowrap; text-align: right">632.95 K</td>
+    <td style="white-space: nowrap; text-align: right">1.28x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">normalized_levensthein</td>
+    <td style="white-space: nowrap; text-align: right">599.83 K</td>
+    <td style="white-space: nowrap; text-align: right">1.35x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">generic_jaro</td>
-    <td style="white-space: nowrap; text-align: right">541.53 K</td>
-    <td style="white-space: nowrap; text-align: right">1.72x</td>
+    <td style="white-space: nowrap; text-align: right">525.65 K</td>
+    <td style="white-space: nowrap; text-align: right">1.54x</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">osa_distance</td>
-    <td style="white-space: nowrap; text-align: right">462.30 K</td>
-    <td style="white-space: nowrap; text-align: right">2.01x</td>
+    <td style="white-space: nowrap">jaro</td>
+    <td style="white-space: nowrap; text-align: right">515.39 K</td>
+    <td style="white-space: nowrap; text-align: right">1.57x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">generic_jaro_winkler</td>
+    <td style="white-space: nowrap; text-align: right">490.34 K</td>
+    <td style="white-space: nowrap; text-align: right">1.65x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">generic_levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">458.63 K</td>
-    <td style="white-space: nowrap; text-align: right">2.03x</td>
+    <td style="white-space: nowrap; text-align: right">440.62 K</td>
+    <td style="white-space: nowrap; text-align: right">1.84x</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">sorensen_dice</td>
-    <td style="white-space: nowrap; text-align: right">296.07 K</td>
-    <td style="white-space: nowrap; text-align: right">3.14x</td>
+    <td style="white-space: nowrap">osa_distance</td>
+    <td style="white-space: nowrap; text-align: right">335.71 K</td>
+    <td style="white-space: nowrap; text-align: right">2.41x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">normalized_damerau_levensthein</td>
-    <td style="white-space: nowrap; text-align: right">254.23 K</td>
-    <td style="white-space: nowrap; text-align: right">3.66x</td>
+    <td style="white-space: nowrap; text-align: right">295.85 K</td>
+    <td style="white-space: nowrap; text-align: right">2.73x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">damerau_levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">149.26 K</td>
-    <td style="white-space: nowrap; text-align: right">6.24x</td>
+    <td style="white-space: nowrap; text-align: right">240.32 K</td>
+    <td style="white-space: nowrap; text-align: right">3.37x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">sorensen_dice</td>
+    <td style="white-space: nowrap; text-align: right">220.89 K</td>
+    <td style="white-space: nowrap; text-align: right">3.66x</td>
   </tr>
 </table>
 Memory Usage
@@ -247,22 +247,7 @@ Memory Usage
       <td>&nbsp;</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">generic_hamming</td>
-    <td style="white-space: nowrap">24 B</td>
-    <td>1.0x</td>
-  </tr>
-  <tr>
-    <td style="white-space: nowrap">jaro</td>
-    <td style="white-space: nowrap">40 B</td>
-    <td>1.67x</td>
-  </tr>
-  <tr>
     <td style="white-space: nowrap">jaro_winkler</td>
-    <td style="white-space: nowrap">40 B</td>
-    <td>1.67x</td>
-  </tr>
-  <tr>
-    <td style="white-space: nowrap">normalized_levensthein</td>
     <td style="white-space: nowrap">40 B</td>
     <td>1.67x</td>
   </tr>
@@ -272,7 +257,12 @@ Memory Usage
     <td>1.0x</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">generic_jaro_winkler</td>
+    <td style="white-space: nowrap">generic_hamming</td>
+    <td style="white-space: nowrap">24 B</td>
+    <td>1.0x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">normalized_levensthein</td>
     <td style="white-space: nowrap">40 B</td>
     <td>1.67x</td>
   </tr>
@@ -282,9 +272,14 @@ Memory Usage
     <td>1.67x</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">osa_distance</td>
-    <td style="white-space: nowrap">24 B</td>
-    <td>1.0x</td>
+    <td style="white-space: nowrap">jaro</td>
+    <td style="white-space: nowrap">40 B</td>
+    <td>1.67x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">generic_jaro_winkler</td>
+    <td style="white-space: nowrap">40 B</td>
+    <td>1.67x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">generic_levenshtein</td>
@@ -292,9 +287,9 @@ Memory Usage
     <td>1.0x</td>
   </tr>
   <tr>
-    <td style="white-space: nowrap">sorensen_dice</td>
-    <td style="white-space: nowrap">40 B</td>
-    <td>1.67x</td>
+    <td style="white-space: nowrap">osa_distance</td>
+    <td style="white-space: nowrap">24 B</td>
+    <td>1.0x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">normalized_damerau_levensthein</td>
@@ -305,6 +300,11 @@ Memory Usage
     <td style="white-space: nowrap">damerau_levenshtein</td>
     <td style="white-space: nowrap">24 B</td>
     <td>1.0x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">sorensen_dice</td>
+    <td style="white-space: nowrap">40 B</td>
+    <td>1.67x</td>
   </tr>
 </table>
 <hr/>
