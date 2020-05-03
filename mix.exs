@@ -66,8 +66,15 @@ defmodule Strsim.MixProject do
       "bench.jaro": ["run bench/jaro.exs"],
       "bench.jaro_winkler": ["run bench/jaro_winkler.exs"],
       "bench.levenshtein": ["run bench/levenshtein.exs"],
+      "bench.hamming": ["run bench/hamming.exs"],
       "bench.strsim": ["run bench/strsim.exs"],
-      "bench.all": ["bench.jaro", "bench.jaro_winkler", "bench.levenshtein", "bench.strsim"]
+      "bench.all": [
+        "bench.jaro",
+        "bench.jaro_winkler",
+        "bench.levenshtein",
+        "bench.hamming",
+        "bench.strsim"
+      ]
     ]
   end
 end
