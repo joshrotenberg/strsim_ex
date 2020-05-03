@@ -12,6 +12,41 @@ defmodule Strsim do
   defdelegate damerau_levenshtein(a, b), to: Strsim.Nif
 
   @doc """
+  Calculates the number of positions in the two sequences where the elements differ. Returns an error if the sequences have different lengths.
+
+      iex> Strsim.generic_hamming([1, 2], [1, 3])
+      {:ok, 1}
+
+      iex> Strsim.generic_hamming([1, 2], [1, 3, 4])
+      {:error, :different_length_args}
+  """
+  defdelegate generic_hamming(a, b), to: Strsim.Nif
+
+  @doc """
+  Calculates the Jaro similarity between two sequences. The returned value is between 0.0 and 1.0 (higher value means more similar).
+
+      iex> Strsim.generic_jaro([1, 2], [1, 3, 4])
+      {:ok, 0.611111111111111}
+  """
+  defdelegate generic_jaro(a, b), to: Strsim.Nif
+
+  @doc """
+  Like Jaro but gives a boost to sequences that have a common prefix.
+
+      iex> Strsim.generic_jaro_winkler([1, 2], [1, 3, 4])
+      {:ok, 0.6499999999999999}
+  """
+  defdelegate generic_jaro_winkler(a, b), to: Strsim.Nif
+
+  @doc """
+  Calculates the minimum number of insertions, deletions, and substitutions required to change one sequence into the other.
+
+      iex> Strsim.generic_levenshtein([1, 2, 3], [1, 2, 3, 4, 5, 6])
+      {:ok, 3}
+  """
+  defdelegate generic_levenshtein(a, b), to: Strsim.Nif
+
+  @doc """
   Calculates the number of positions in the two strings where the characters differ. Returns an error if the strings have different lengths.
 
       iex> Strsim.hamming("hamming", "hammers")
@@ -58,7 +93,7 @@ defmodule Strsim do
   Calculates a normalized score of the Levenshtein algorithm between 0.0 and 1.0 (inclusive), where 1.0 means the strings are the same.
 
       iex> Strsim.normalized_levenshtein("kitten", "sitting")
-      {:ok, 0.2727272727272727}
+      {:ok, 0.5714285714285714}
   """
   defdelegate normalized_levenshtein(a, b), to: Strsim.Nif
 

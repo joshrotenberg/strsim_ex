@@ -1,18 +1,29 @@
 defmodule StrsimTest do
+  @moduledoc false
   use ExUnit.Case
 
-  doctest Strsim,
-    except: [
-      jaro: 2,
-      jaro_winkler: 2,
-      normalized_damerau_levenshtein: 2,
-      normalized_levenshtein: 2,
-      sorensen_dice: 2
-    ]
+  doctest Strsim
 
   describe "strsim tests" do
     test "damerau_levenshtein/2" do
       assert Strsim.damerau_levenshtein("ab", "bca") == {:ok, 2}
+    end
+
+    test "generic_hamming/2" do
+      assert Strsim.generic_hamming([1, 2], [1, 3]) == {:ok, 1}
+      assert Strsim.generic_hamming([1, 2], [1, 3, 4]) == {:error, :different_length_args}
+    end
+
+    test "generic_jaro/2" do
+      assert Strsim.generic_jaro([1, 2], [1, 3, 4]) == {:ok, 0.611111111111111}
+    end
+
+    test "generic_jaro_winkler/2" do
+      assert Strsim.generic_jaro_winkler([1, 2], [1, 3, 4]) == {:ok, 0.6499999999999999}
+    end
+
+    test "generic_levenshtein/2" do
+      assert Strsim.generic_levenshtein([1, 2, 3], [1, 2, 3, 4, 5, 6]) == {:ok, 3}
     end
 
     test "hamming/2" do

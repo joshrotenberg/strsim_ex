@@ -3,6 +3,11 @@ defmodule Strsim.Nif do
   use Rustler, otp_app: :strsim, crate: "strsim_nif"
 
   def damerau_levenshtein(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
+  def generic_damerau_levenshtein(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
+  def generic_hamming(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
+  def generic_jaro(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
+  def generic_jaro_winkler(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
+  def generic_levenshtein(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
   def hamming(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
   def jaro(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
   def jaro_winkler(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
