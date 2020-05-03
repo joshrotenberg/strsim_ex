@@ -43,7 +43,9 @@ defmodule Strsim.MixProject do
       {:excoveralls, "~> 0.10", only: :test},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
       {:benchee, "~> 1.0", only: [:dev, :bench]},
-      {:benchee_markdown, "~> 0.2", only: [:dev, :bench]}
+      {:benchee_markdown, "~> 0.2", only: [:dev, :bench]},
+      {:the_fuzz, "~> 0.5.0", only: [:dev, :bench]},
+      {:simetric, "~> 0.2.0", only: [:dev, :bench]}
     ]
   end
 
@@ -62,9 +64,10 @@ defmodule Strsim.MixProject do
   defp aliases do
     [
       "bench.jaro": ["run bench/jaro.exs"],
+      "bench.jaro_winkler": ["run bench/jaro_winkler.exs"],
       "bench.levenshtein": ["run bench/levenshtein.exs"],
       "bench.strsim": ["run bench/strsim.exs"],
-      "bench.all": ["bench.jaro", "bench.levenshtein", "bench.strsim"]
+      "bench.all": ["bench.jaro", "bench.jaro_winkler", "bench.levenshtein", "bench.strsim"]
     ]
   end
 end
