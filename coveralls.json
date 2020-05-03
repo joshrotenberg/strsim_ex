@@ -1,0 +1,6 @@
+{
+    "skip_files": [
+        "lib/strsim/nif.ex",
+        "lib/mix"
+    ]
+}
