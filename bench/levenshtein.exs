@@ -20,6 +20,7 @@ defmodule Levenshtein do
   end
 
   defp distlist([], _, _, new_distlist, _), do: Enum.reverse(new_distlist)
+
   defp distlist(
          [target_hd | target_tl],
          [distlist_hd | distlist_tl],
@@ -36,16 +37,15 @@ end
 Benchee.run(
   %{
     "elixir levenshtein" => fn -> Levenshtein.levenshtein_distance("kitten", "sitting") end,
-    "strsim levenshtein" => fn -> Strsim.levenshtein("kitten", "sitting") end,
+    "strsim levenshtein" => fn -> Strsim.levenshtein("kitten", "sitting") end
   },
   formatters: [
     {Benchee.Formatters.Markdown,
-    file: "bench/levenshtein_benchmark_results.md",
-    description: """
-    This benchmark compares a pure Elixir and Rust `levenshtein` implementation.
-    """
-  },
-  {Benchee.Formatters.Console, extended_statistics: true},
+     file: "bench/levenshtein_benchmark_results.md",
+     description: """
+     This benchmark compares a pure Elixir and Rust `levenshtein` implementation.
+     """},
+    {Benchee.Formatters.Console, extended_statistics: true}
   ],
   time: 10,
   memory_time: 2

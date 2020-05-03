@@ -5,12 +5,11 @@ Benchee.run(
   },
   formatters: [
     {Benchee.Formatters.Markdown,
-    file: "bench/jaro_benchmark_results.md",
-    description: """
-    This benchmark compares a pure Elixir and Rust `jaro` implementation.
-    """
-  },
-  {Benchee.Formatters.Console, extended_statistics: true},
+     file: "bench/jaro_benchmark_results.md",
+     description: """
+     This benchmark compares a pure Elixir and Rust `jaro` implementation.
+     """},
+    {Benchee.Formatters.Console, extended_statistics: true}
   ],
   time: 10,
   memory_time: 2
