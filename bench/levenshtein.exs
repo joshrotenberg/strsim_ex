@@ -45,7 +45,7 @@ Benchee.run(
     This benchmark compares a pure Elixir and Rust `levenshtein` implementation.
     """
   },
-    Benchee.Formatters.Console
+  {Benchee.Formatters.Console, extended_statistics: true},
   ],
   time: 10,
   memory_time: 2

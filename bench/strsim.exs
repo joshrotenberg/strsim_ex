@@ -17,7 +17,7 @@ Benchee.run(
     This benchmark compares all of the implemented strsim functions.
     """
   },
-    Benchee.Formatters.Console
+  {Benchee.Formatters.Console, extended_statistics: true},
   ],
   time: 10,
   memory_time: 2
