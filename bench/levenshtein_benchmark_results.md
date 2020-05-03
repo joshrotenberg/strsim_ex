@@ -59,19 +59,35 @@ Run Time
   </tr>
   <tr>
     <td style="white-space: nowrap">strsim levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">751.74 K</td>
-    <td style="white-space: nowrap; text-align: right">1.33 μs</td>
-    <td style="white-space: nowrap; text-align: right">±778.29%</td>
+    <td style="white-space: nowrap; text-align: right">724.40 K</td>
+    <td style="white-space: nowrap; text-align: right">1.38 μs</td>
+    <td style="white-space: nowrap; text-align: right">±701.22%</td>
     <td style="white-space: nowrap; text-align: right">1 μs</td>
-    <td style="white-space: nowrap; text-align: right">3 μs</td>
+    <td style="white-space: nowrap; text-align: right">2 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">115.35 K</td>
-    <td style="white-space: nowrap; text-align: right">8.67 μs</td>
-    <td style="white-space: nowrap; text-align: right">±376.10%</td>
+    <td style="white-space: nowrap; text-align: right">116.98 K</td>
+    <td style="white-space: nowrap; text-align: right">8.55 μs</td>
+    <td style="white-space: nowrap; text-align: right">±275.59%</td>
     <td style="white-space: nowrap; text-align: right">8 μs</td>
     <td style="white-space: nowrap; text-align: right">17 μs</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">simetric levensthein</td>
+    <td style="white-space: nowrap; text-align: right">115.09 K</td>
+    <td style="white-space: nowrap; text-align: right">8.69 μs</td>
+    <td style="white-space: nowrap; text-align: right">±242.46%</td>
+    <td style="white-space: nowrap; text-align: right">8 μs</td>
+    <td style="white-space: nowrap; text-align: right">17 μs</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">the_fuzz levensthein</td>
+    <td style="white-space: nowrap; text-align: right">18.37 K</td>
+    <td style="white-space: nowrap; text-align: right">54.44 μs</td>
+    <td style="white-space: nowrap; text-align: right">±57.54%</td>
+    <td style="white-space: nowrap; text-align: right">51 μs</td>
+    <td style="white-space: nowrap; text-align: right">91 μs</td>
   </tr>
 </table>
 Comparison
@@ -82,13 +98,23 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">strsim levenshtein</td>
-    <td style="white-space: nowrap;text-align: right">751.74 K</td>
+    <td style="white-space: nowrap;text-align: right">724.40 K</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir levenshtein</td>
-    <td style="white-space: nowrap; text-align: right">115.35 K</td>
-    <td style="white-space: nowrap; text-align: right">6.52x</td>
+    <td style="white-space: nowrap; text-align: right">116.98 K</td>
+    <td style="white-space: nowrap; text-align: right">6.19x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">simetric levensthein</td>
+    <td style="white-space: nowrap; text-align: right">115.09 K</td>
+    <td style="white-space: nowrap; text-align: right">6.29x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">the_fuzz levensthein</td>
+    <td style="white-space: nowrap; text-align: right">18.37 K</td>
+    <td style="white-space: nowrap; text-align: right">39.44x</td>
   </tr>
 </table>
 Memory Usage
@@ -107,6 +133,16 @@ Memory Usage
     <td style="white-space: nowrap">elixir levenshtein</td>
     <td style="white-space: nowrap">3.40 KB</td>
     <td>145.0x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">simetric levensthein</td>
+    <td style="white-space: nowrap">3.15 KB</td>
+    <td>134.33x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">the_fuzz levensthein</td>
+    <td style="white-space: nowrap">25.37 KB</td>
+    <td>1082.33x</td>
   </tr>
 </table>
 <hr/>

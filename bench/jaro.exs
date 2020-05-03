@@ -1,7 +1,8 @@
 Benchee.run(
   %{
     "strsim jaro" => fn -> Strsim.jaro("Dwayne", "Duane") end,
-    "elixir jaro" => fn -> String.jaro_distance("Dwayne", "Duane") end
+    "elixir jaro" => fn -> String.jaro_distance("Dwayne", "Duane") end,
+    "the_fuzz jaro" => fn -> TheFuzz.Similarity.Jaro.compare("Dwayne", "Duane") end
   },
   formatters: [
     {Benchee.Formatters.Markdown,

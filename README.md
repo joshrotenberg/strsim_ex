@@ -56,13 +56,16 @@ iex(14)> Strsim.sorensen_dice("ferris", "feris")
 ## Benchmarks
 
 Everybody loves benchmarks. There are results for all implemented [strsim](bench/strsim_benchmark_results.md) 
-as well as both [jaro](bench/jaro_benchmark_results.md) and [levenshtein](bench/levenshtein_benchmark_results.md) comparing the Rust and Elixir implementations.
+as well as both [jaro](bench/jaro_benchmark_results.md), [jaro_winkler](bench/jaro_winkler_benchmarks_results.md) and [levenshtein](bench/levenshtein_benchmark_results.md) comparing the Rust and Elixir implementations.
 
 To run the benchmarks:
 
 ```
-# run the Elixir vs Rust jaro benchmark
+# run the Elixir vs Rust Jaro benchmark
 $ MIX_ENV=bench mix bench.jaro 
+
+# run the Elixir vs Rust Jaro-Winkler benchmark
+$ MIX_ENV=bench mix bench.jaro_winkler 
 
 # run the Elixir vs Rust levensthein benchmark
 $ MIX_ENV=bench mix bench.levenshtein
@@ -80,6 +83,7 @@ $ MIX_ENV=bench mix bench.all
 * [levenshtein][5]
 * [String.jaro_distance/2][6]
 * [the_fuzz][7]
+* [simetric][8]
 
 ## Installation
 
@@ -106,3 +110,4 @@ be found at [https://hexdocs.pm/strsim](https://hexdocs.pm/strsim).
 [5]: https://hex.pm/packages/levenshtein
 [6]: https://hexdocs.pm/elixir/String.html#jaro_distance/2
 [7]: https://hex.pm/packages/the_fuzz
+[8]: https://hex.pm/packages/simetric

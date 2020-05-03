@@ -37,7 +37,9 @@ end
 Benchee.run(
   %{
     "elixir levenshtein" => fn -> Levenshtein.levenshtein_distance("kitten", "sitting") end,
-    "strsim levenshtein" => fn -> Strsim.levenshtein("kitten", "sitting") end
+    "strsim levenshtein" => fn -> Strsim.levenshtein("kitten", "sitting") end,
+    "the_fuzz levensthein" => fn -> TheFuzz.Similarity.Levenshtein.compare("kitten", "sitting") end,
+    "simetric levensthein" => fn -> Simetric.Levenshtein.compare("kitten", "sitting") end
   },
   formatters: [
     {Benchee.Formatters.Markdown,

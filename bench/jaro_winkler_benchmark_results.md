@@ -1,6 +1,6 @@
 # Benchmark
 
-This benchmark compares a pure Elixir and Rust `jaro` implementation.
+This benchmark compares pure Elixir and Rust `jaro_winkler` implementations.
 
 ## System
 
@@ -59,27 +59,35 @@ Run Time
   </tr>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap; text-align: right">806.73 K</td>
-    <td style="white-space: nowrap; text-align: right">1.24 μs</td>
-    <td style="white-space: nowrap; text-align: right">±3090.79%</td>
+    <td style="white-space: nowrap; text-align: right">766.09 K</td>
+    <td style="white-space: nowrap; text-align: right">1.31 μs</td>
+    <td style="white-space: nowrap; text-align: right">±3020.57%</td>
     <td style="white-space: nowrap; text-align: right">1 μs</td>
     <td style="white-space: nowrap; text-align: right">2 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">217.16 K</td>
-    <td style="white-space: nowrap; text-align: right">4.60 μs</td>
-    <td style="white-space: nowrap; text-align: right">±648.79%</td>
+    <td style="white-space: nowrap; text-align: right">209.58 K</td>
+    <td style="white-space: nowrap; text-align: right">4.77 μs</td>
+    <td style="white-space: nowrap; text-align: right">±698.28%</td>
     <td style="white-space: nowrap; text-align: right">4 μs</td>
-    <td style="white-space: nowrap; text-align: right">9 μs</td>
+    <td style="white-space: nowrap; text-align: right">10 μs</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">simetric</td>
+    <td style="white-space: nowrap; text-align: right">145.94 K</td>
+    <td style="white-space: nowrap; text-align: right">6.85 μs</td>
+    <td style="white-space: nowrap; text-align: right">±814.64%</td>
+    <td style="white-space: nowrap; text-align: right">6 μs</td>
+    <td style="white-space: nowrap; text-align: right">15 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">the_fuzz jaro</td>
-    <td style="white-space: nowrap; text-align: right">164.99 K</td>
-    <td style="white-space: nowrap; text-align: right">6.06 μs</td>
-    <td style="white-space: nowrap; text-align: right">±337.29%</td>
-    <td style="white-space: nowrap; text-align: right">5 μs</td>
-    <td style="white-space: nowrap; text-align: right">12 μs</td>
+    <td style="white-space: nowrap; text-align: right">95.71 K</td>
+    <td style="white-space: nowrap; text-align: right">10.45 μs</td>
+    <td style="white-space: nowrap; text-align: right">±200.34%</td>
+    <td style="white-space: nowrap; text-align: right">9 μs</td>
+    <td style="white-space: nowrap; text-align: right">21 μs</td>
   </tr>
 </table>
 Comparison
@@ -90,18 +98,23 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap;text-align: right">806.73 K</td>
+    <td style="white-space: nowrap;text-align: right">766.09 K</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">217.16 K</td>
-    <td style="white-space: nowrap; text-align: right">3.71x</td>
+    <td style="white-space: nowrap; text-align: right">209.58 K</td>
+    <td style="white-space: nowrap; text-align: right">3.66x</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">simetric</td>
+    <td style="white-space: nowrap; text-align: right">145.94 K</td>
+    <td style="white-space: nowrap; text-align: right">5.25x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">the_fuzz jaro</td>
-    <td style="white-space: nowrap; text-align: right">164.99 K</td>
-    <td style="white-space: nowrap; text-align: right">4.89x</td>
+    <td style="white-space: nowrap; text-align: right">95.71 K</td>
+    <td style="white-space: nowrap; text-align: right">8.0x</td>
   </tr>
 </table>
 Memory Usage
@@ -122,9 +135,14 @@ Memory Usage
     <td>56.4x</td>
   </tr>
   <tr>
+    <td style="white-space: nowrap">simetric</td>
+    <td style="white-space: nowrap">2.73 KB</td>
+    <td>70.0x</td>
+  </tr>
+  <tr>
     <td style="white-space: nowrap">the_fuzz jaro</td>
-    <td style="white-space: nowrap">3.40 KB</td>
-    <td>87.0x</td>
+    <td style="white-space: nowrap">5.98 KB</td>
+    <td>153.2x</td>
   </tr>
 </table>
 <hr/>
