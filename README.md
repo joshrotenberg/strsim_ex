@@ -2,8 +2,25 @@
 
 [![Hex pm](http://img.shields.io/hexpm/v/strsim.svg?style=flat)](https://hex.pm/packages/strsim)
 ![Elixir CI](https://github.com/joshrotenberg/strsim_ex/workflows/Elixir%20CI/badge.svg)
+![License](https://img.shields.io/hexpm/l/strsim)
+![Hex.pm](https://img.shields.io/hexpm/dw/strsim)
+[![Coverage Status](https://coveralls.io/repos/github/joshrotenberg/strsim_ex/badge.svg?branch=master)](https://coveralls.io/github/joshrotenberg/strsim_ex?branch=master)
 
-An [Elixir][0] wrapper around the [Rust][1] [strsim][2] crate with [rustler][3].
+Strsim is an [Elixir][0] wrapper for the [Rust][1] [strsim][2] crate with [Rustler][3].
+
+## Summary
+
+Strsim is a NIF-based bridge for the [strsim][2] [Rust][1] library which implements the following string similarity algorithms:
+
+* Levenshtein
+* Damerau-Levensthein
+* Jaro
+* Jaro-Winkler
+* Hamming
+* Optimal String Alignment
+* Sørensen–Dice
+
+The crate offers several functions for both strings and generic sequences, and this library exposes all of them except for the generic Damerau-Levenshtein for now.
 
 ## Usage
 
@@ -56,19 +73,22 @@ iex(14)> Strsim.sorensen_dice("ferris", "feris")
 ## Benchmarks
 
 Everybody loves benchmarks. There are results for all implemented [strsim](bench/strsim_benchmark_results.md) 
-as well as both [jaro](bench/jaro_benchmark_results.md), [jaro_winkler](bench/jaro_winkler_benchmarks_results.md) and [levenshtein](bench/levenshtein_benchmark_results.md) comparing the Rust and Elixir implementations.
+as well as [jaro](bench/jaro_benchmark_results.md), [jaro_winkler](bench/jaro_winkler_benchmarks_results.md), [levenshtein](bench/levenshtein_benchmark_results.md) and [hamming](bench/hamming_benchmark_results.md) comparing the Rust and various Elixir implementations.
 
 To run the benchmarks:
 
 ```
-# run the Elixir vs Rust Jaro benchmark
+# run Elixir vs Rust Jaro benchmarks
 $ MIX_ENV=bench mix bench.jaro 
 
-# run the Elixir vs Rust Jaro-Winkler benchmark
+# run Elixir vs Rust Jaro-Winkler benchmarks
 $ MIX_ENV=bench mix bench.jaro_winkler 
 
-# run the Elixir vs Rust levensthein benchmark
+# run Elixir vs Rust levensthein benchmarks
 $ MIX_ENV=bench mix bench.levenshtein
+
+# run Elixir vs Rust hamming benchmarks
+$ MIX_ENV=bench mix bench.hamming
 
 # run a benchmark will all of the Rust functions
 $ MIX_ENV=bench mix bench.strsim
@@ -93,7 +113,7 @@ by adding `strsim` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:strsim, "~> 0.1.0"}
+    {:strsim, "~> 0.1.1"}
   ]
 end
 ```
