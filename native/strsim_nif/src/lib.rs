@@ -72,10 +72,10 @@ fn damerau_levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a
 }
 
 // fn generic_damerau_levenshtein<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
-    // let vec1: Vec<Term> = args[0].decode()?;
-    // let vec2: Vec<Term> = args[1].decode()?;
+// let vec1: Vec<Term> = args[0].decode()?;
+// let vec2: Vec<Term> = args[1].decode()?;
 
-    // Ok((atoms::ok(), _generic_damerau_levenshtein(&vec1, &vec2).encode(env)))
+// Ok((atoms::ok(), _generic_damerau_levenshtein(&vec1, &vec2).encode(env)))
 // }
 
 fn generic_hamming<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
