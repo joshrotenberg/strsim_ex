@@ -59,35 +59,35 @@ Run Time
   </tr>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap; text-align: right">613.78 K</td>
-    <td style="white-space: nowrap; text-align: right">1.63 μs</td>
-    <td style="white-space: nowrap; text-align: right">±4651.43%</td>
-    <td style="white-space: nowrap; text-align: right">0.90 μs</td>
-    <td style="white-space: nowrap; text-align: right">4.90 μs</td>
+    <td style="white-space: nowrap; text-align: right">630.17 K</td>
+    <td style="white-space: nowrap; text-align: right">1.59 μs</td>
+    <td style="white-space: nowrap; text-align: right">±5975.44%</td>
+    <td style="white-space: nowrap; text-align: right">1 μs</td>
+    <td style="white-space: nowrap; text-align: right">4 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">216.52 K</td>
-    <td style="white-space: nowrap; text-align: right">4.62 μs</td>
-    <td style="white-space: nowrap; text-align: right">±914.28%</td>
-    <td style="white-space: nowrap; text-align: right">3.90 μs</td>
-    <td style="white-space: nowrap; text-align: right">12.90 μs</td>
+    <td style="white-space: nowrap; text-align: right">186.03 K</td>
+    <td style="white-space: nowrap; text-align: right">5.38 μs</td>
+    <td style="white-space: nowrap; text-align: right">±1674.06%</td>
+    <td style="white-space: nowrap; text-align: right">4 μs</td>
+    <td style="white-space: nowrap; text-align: right">12 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">simetric</td>
-    <td style="white-space: nowrap; text-align: right">162.46 K</td>
-    <td style="white-space: nowrap; text-align: right">6.16 μs</td>
-    <td style="white-space: nowrap; text-align: right">±507.63%</td>
-    <td style="white-space: nowrap; text-align: right">4.90 μs</td>
-    <td style="white-space: nowrap; text-align: right">14.90 μs</td>
+    <td style="white-space: nowrap; text-align: right">147.87 K</td>
+    <td style="white-space: nowrap; text-align: right">6.76 μs</td>
+    <td style="white-space: nowrap; text-align: right">±494.72%</td>
+    <td style="white-space: nowrap; text-align: right">6 μs</td>
+    <td style="white-space: nowrap; text-align: right">17 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">the_fuzz jaro</td>
-    <td style="white-space: nowrap; text-align: right">86.28 K</td>
-    <td style="white-space: nowrap; text-align: right">11.59 μs</td>
-    <td style="white-space: nowrap; text-align: right">±350.65%</td>
-    <td style="white-space: nowrap; text-align: right">9.90 μs</td>
-    <td style="white-space: nowrap; text-align: right">39.90 μs</td>
+    <td style="white-space: nowrap; text-align: right">80.42 K</td>
+    <td style="white-space: nowrap; text-align: right">12.43 μs</td>
+    <td style="white-space: nowrap; text-align: right">±610.58%</td>
+    <td style="white-space: nowrap; text-align: right">10 μs</td>
+    <td style="white-space: nowrap; text-align: right">39 μs</td>
   </tr>
 </table>
 Comparison
@@ -98,23 +98,23 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">strsim jaro</td>
-    <td style="white-space: nowrap;text-align: right">613.78 K</td>
+    <td style="white-space: nowrap;text-align: right">630.17 K</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">elixir jaro</td>
-    <td style="white-space: nowrap; text-align: right">216.52 K</td>
-    <td style="white-space: nowrap; text-align: right">2.83x</td>
+    <td style="white-space: nowrap; text-align: right">186.03 K</td>
+    <td style="white-space: nowrap; text-align: right">3.39x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">simetric</td>
-    <td style="white-space: nowrap; text-align: right">162.46 K</td>
-    <td style="white-space: nowrap; text-align: right">3.78x</td>
+    <td style="white-space: nowrap; text-align: right">147.87 K</td>
+    <td style="white-space: nowrap; text-align: right">4.26x</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">the_fuzz jaro</td>
-    <td style="white-space: nowrap; text-align: right">86.28 K</td>
-    <td style="white-space: nowrap; text-align: right">7.11x</td>
+    <td style="white-space: nowrap; text-align: right">80.42 K</td>
+    <td style="white-space: nowrap; text-align: right">7.84x</td>
   </tr>
 </table>
 Memory Usage

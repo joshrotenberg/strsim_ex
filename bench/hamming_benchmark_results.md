@@ -59,19 +59,19 @@ Run Time
   </tr>
   <tr>
     <td style="white-space: nowrap">strsim hamming</td>
-    <td style="white-space: nowrap; text-align: right">1.07 M</td>
-    <td style="white-space: nowrap; text-align: right">0.93 μs</td>
-    <td style="white-space: nowrap; text-align: right">±227.67%</td>
+    <td style="white-space: nowrap; text-align: right">869.32 K</td>
+    <td style="white-space: nowrap; text-align: right">1.15 μs</td>
+    <td style="white-space: nowrap; text-align: right">±2063.20%</td>
     <td style="white-space: nowrap; text-align: right">1 μs</td>
-    <td style="white-space: nowrap; text-align: right">2 μs</td>
+    <td style="white-space: nowrap; text-align: right">3 μs</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">the_fuzz hamming</td>
-    <td style="white-space: nowrap; text-align: right">0.30 M</td>
-    <td style="white-space: nowrap; text-align: right">3.28 μs</td>
-    <td style="white-space: nowrap; text-align: right">±1166.89%</td>
+    <td style="white-space: nowrap; text-align: right">286.91 K</td>
+    <td style="white-space: nowrap; text-align: right">3.49 μs</td>
+    <td style="white-space: nowrap; text-align: right">±1694.44%</td>
     <td style="white-space: nowrap; text-align: right">3 μs</td>
-    <td style="white-space: nowrap; text-align: right">6 μs</td>
+    <td style="white-space: nowrap; text-align: right">9 μs</td>
   </tr>
 </table>
 Comparison
@@ -82,13 +82,13 @@ Comparison
     <th style="text-align: right">Slower</th>
   <tr>
     <td style="white-space: nowrap">strsim hamming</td>
-    <td style="white-space: nowrap;text-align: right">1.07 M</td>
+    <td style="white-space: nowrap;text-align: right">869.32 K</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td style="white-space: nowrap">the_fuzz hamming</td>
-    <td style="white-space: nowrap; text-align: right">0.30 M</td>
-    <td style="white-space: nowrap; text-align: right">3.53x</td>
+    <td style="white-space: nowrap; text-align: right">286.91 K</td>
+    <td style="white-space: nowrap; text-align: right">3.03x</td>
   </tr>
 </table>
 Memory Usage
