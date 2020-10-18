@@ -73,7 +73,7 @@ iex(14)> Strsim.sorensen_dice("ferris", "feris")
 ## Benchmarks
 
 Everybody loves benchmarks. There are results for all implemented [strsim](bench/strsim_benchmark_results.md) 
-as well as [jaro](bench/jaro_benchmark_results.md), [jaro_winkler](bench/jaro_winkler_benchmarks_results.md), [levenshtein](bench/levenshtein_benchmark_results.md) and [hamming](bench/hamming_benchmark_results.md) comparing the Rust and various Elixir implementations.
+as well as [jaro](bench/jaro_benchmark_results.md), [jaro_winkler](bench/jaro_winkler_benchmark_results.md), [levenshtein](bench/levenshtein_benchmark_results.md) and [hamming](bench/hamming_benchmark_results.md) comparing the Rust and various Elixir implementations.
 
 To run the benchmarks:
 
