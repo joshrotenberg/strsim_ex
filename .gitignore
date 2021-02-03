@@ -28,3 +28,7 @@ what-*.tar
 # Ignore *.so
 *.so
 
+/.vscode/
+.DS_Store
+/priv/native/
+target
