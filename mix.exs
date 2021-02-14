@@ -4,7 +4,7 @@ defmodule Strsim.MixProject do
   def project do
     [
       app: :strsim,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.10",
       source_url: "https://github.com/joshrotenberg/strsim_ex",
       test_coverage: [tool: ExCoveralls],
@@ -26,7 +26,16 @@ defmodule Strsim.MixProject do
     [
       maintainers: ["Josh Rotenberg"],
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/joshrotenberg/strsim_ex"}
+      links: %{"GitHub" => "https://github.com/joshrotenberg/strsim_ex"},
+      name: :strsim,
+      files: [
+        "lib",
+        "mix.exs",
+        "README.md",
+        "LICENSE",
+        "native/strsim_nif/Cargo.*",
+        "native/strsim_nif/src"
+      ]
     ]
   end
 
