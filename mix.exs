@@ -50,7 +50,7 @@ defmodule Strsim.MixProject do
       {:rustler, "~> 0.21.1"},
       {:credo, "~> 1.4", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test},
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.23", only: :dev, runtime: false},
       {:benchee, "~> 1.0", only: [:dev, :bench]},
       {:benchee_markdown, "~> 0.2", only: [:dev, :bench]},
       {:the_fuzz, "~> 0.5.0", only: [:dev, :bench]},
